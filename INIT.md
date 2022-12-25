@@ -9,3 +9,12 @@ $ docker exec -it app sh
 $ yarn add @heroicons/react@2.0.13 @supabase/auth-helpers-nextjs@0.5.2 @supabase/supabase-js@2.1.1 zustand@4.1.4 supabase@1.27.0 date-fns@2.29.3
 $ yarn add next@13.0.6
 ```
+
+## supabase
+```sh
+$ docker exec -it app sh
+$ npx supabase login
+$ npx supabase init
+$ npx supabase link --project-ref your_project_id
+$ npx supabase gen types typescript --linked > database.types.ts
+```
