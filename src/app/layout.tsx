@@ -8,6 +8,10 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
     <body>
       {/* MEMO: NavBarは自動付与されたSuspenseの外側なのでローディング中も表示されている */}
       <NavBar />
+      <div className="mt-6 text-center tracking-wider">
+        <p>Layout - root</p>
+        <p>( app/layout.tsx )</p>
+      </div>
       {children}
     </body>
   </html>
