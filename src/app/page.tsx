@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 
 import { NotesList, Spinner } from './components';
 import TimerCounter from './components/TimerCounter';
+import RefreshBtn from './components/RefreshButton';
 
 const Page = () => (
   <main>
@@ -13,6 +14,8 @@ const Page = () => (
         <NotesList />
       </Suspense>
       <TimerCounter />
+      {/* TimerCounterの状態を保持しつつデータ再取得を行う */}
+      <RefreshBtn />
     </div>
   </main>
 );
